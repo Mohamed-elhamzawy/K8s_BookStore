@@ -23,7 +23,7 @@ RUN chown -R 1001:1001 /usr/share/nginx/html /etc/nginx
 ############################
 # Stage 2: Runtime
 ############################
-FROM alpine:3.19
+FROM alpine:3.20
 
 # Install nginx only (minimal runtime)
 RUN apk add --no-cache nginx && \
